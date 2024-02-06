@@ -6,15 +6,15 @@
   
   <title>關於我 | 洧杰部落格</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="關於我的副標題     這是關於我的訊息按鈕">
+  <meta name="description" content="關於我的副標題 這是關於我的訊息按鈕">
 <meta property="og:type" content="website">
 <meta property="og:title" content="關於我">
 <meta property="og:url" content="https://gonsakon.github.io/hexo-blog/about/index.html">
 <meta property="og:site_name" content="洧杰部落格">
-<meta property="og:description" content="關於我的副標題     這是關於我的訊息按鈕">
+<meta property="og:description" content="關於我的副標題 這是關於我的訊息按鈕">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-02-05T18:04:12.199Z">
-<meta property="article:modified_time" content="2024-02-05T18:04:12.199Z">
+<meta property="article:published_time" content="2024-02-06T14:43:49.121Z">
+<meta property="article:modified_time" content="2024-02-06T14:43:49.121Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -37,8 +37,8 @@
 
 
   <body>
-    <div id="container">
-      <div id="wrap" class="">
+    <div id="container" class="fullPage">
+      <div id="wrap">
         <header id="header">
   <div id="banner"></div>
   <div id="header-outer" class="outer">
@@ -81,10 +81,10 @@
   </div>
 </header>
           <div class="outer">
-            <section id="main"><article id="true-" class="h-entry article article-type-true" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+            <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/hexo-blog/about/index.html" class="article-date">
-  <time class="dt-published" datetime="2024-02-05T18:04:12.199Z" itemprop="datePublished">2024-02-06</time>
+  <time class="dt-published" datetime="2024-02-06T14:43:49.121Z" itemprop="datePublished">2024-02-06</time>
 </a>
     
   </div>
@@ -103,10 +103,8 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <div class="container1">
-    <h2>關於我的副標題</h2>
-    <button class="btn btn-outline-primary" type="button">這是關於我的訊息按鈕</button>
-</div>
+        <h2>關於我的副標題</h2>
+<button class="btn btn-outline-primary" type="button">這是關於我的訊息按鈕</button>
       
     </div>
     <footer class="article-footer">
@@ -218,7 +216,28 @@
 
 
 
-          <h1>qq</h1>
+          <style>
+            .fullPage #main {
+              width: 100%;
+              float: none;
+            }
+
+            .fullPage .article-meta {
+              display: none;
+            }
+
+            .fullPage #sidebar {
+              display: none;
+            }
+
+            .fullPage .article-footer {
+              display: none;
+            }
+
+            .fullPage .article-header {
+              display: none;
+            }
+          </style>
     </div>
   </body>
 
