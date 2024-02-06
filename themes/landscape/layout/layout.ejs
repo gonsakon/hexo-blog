@@ -3,12 +3,12 @@
 <%- partial('_partial/head') %>
 
   <body>
-    <div id="container">
-      <div id="wrap" class="<%= page.path === 'index.html' ? 'index' : '' %>">
+    <div id="container" class="<%= page.fullPage === true ? 'fullPage' : '' %>">
+      <div id="wrap">
         <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
           <div class="outer">
             <section id="main"><%- body %></section>
-            <% if (page.path !=='index.html' && theme.sidebar && theme.sidebar !=='bottom' ){ %>
+            <% if (theme.sidebar && theme.sidebar !=='bottom' ){ %>
               <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
                 <% } %>
           </div>
@@ -16,7 +16,28 @@
       </div>
       <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
         <%- partial('_partial/after-footer') %>
-          <h1>qq</h1>
+          <style>
+            .fullPage #main {
+              width: 100%;
+              float: none;
+            }
+
+            .fullPage .article-meta {
+              display: none;
+            }
+
+            .fullPage #sidebar {
+              display: none;
+            }
+
+            .fullPage .article-footer {
+              display: none;
+            }
+
+            .fullPage .article-header {
+              display: none;
+            }
+          </style>
     </div>
   </body>
 
